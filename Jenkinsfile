@@ -6,6 +6,14 @@ pipeline {
      agent { label 'master' }
 
     stages {
+	     stage ('Initialize') {
+            steps {
+                sh '''
+                    echo "PATH = D:\satish\MSD\apache-maven-3.6.3\bin:%PATH%"
+                    echo "M2_HOME = D:\satish\MSD\apache-maven-3.6.3"
+                '''
+            }
+        }
         stage('Clone sources'){
             steps {
                 git url: 'https://github.com/Satishbabu99/pipe.git'
