@@ -9,8 +9,8 @@ pipeline {
 	     stage ('Initialize') {
             steps {
                 sh '''
-                    echo "PATH = D:\satish\MSD\apache-maven-3.6.3\bin:%PATH%"
-                    echo "M2_HOME = D:\satish\MSD\apache-maven-3.6.3"
+                    echo "PATH = D:/satish/MSD/apache-maven-3.6.3/bin:%PATH%"
+                    echo "M2_HOME = D:/satish/MSD/apache-maven-3.6.3"
                 '''
             }
         }
